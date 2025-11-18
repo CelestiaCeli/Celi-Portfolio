@@ -1,2 +1,2 @@
-# Quasrite-Catalogue
-This is a personal website, think of it as a resume showcase
+# Portfolio
+This is a personal portfolio website that will be added onto overtime.!!
