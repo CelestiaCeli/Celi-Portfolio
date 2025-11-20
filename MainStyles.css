@@ -420,7 +420,7 @@ body {
     margin-top: -4%;
     width: 90%;
     margin-right: 5%;
-    height: 89%;
+    height: 93%;
     z-index: -5;
 }
 
@@ -469,4 +469,11 @@ body {
 
 h3, h2, h1, h4, p {
     color: azure;
+}
+
+
+#Resume
+{
+    width:"1%";
+    height:"1%";
 }
