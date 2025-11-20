@@ -1,3 +1,28 @@
+/* Yes this CSS is messy. I'll clean it up after this is not a timed assignment. */
+
+@font-face {
+    font-family: fac;
+    src: url('Assets/Fonts/GoodfishRg.otf');
+}
+
+@font-face {
+    font-family: Drybrush;
+    src: url('Assets/Fonts/Drybrush.ttf');
+}
+
+@font-face {
+    font-family: Cyen;
+    src: url('Assets/Fonts/Cyen.ttf');
+}
+
+@font-face {
+    font-family: itsadzoke;
+    src: url('Assets/Fonts/itsadzoke-046.otf');
+}
+
+
+
+
 @media screen and (min-width: 700px) {
     
 .Main {
@@ -28,9 +53,15 @@
 
 #Header h1
 {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
 }
 
+.Showcase
+{
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-self: center;
+    margin-top: -1%;
+}
 #GamePopUp
 {
     position: relative;
@@ -76,6 +107,21 @@
     margin-left: 33%;
     margin-right: 33%;
 }
+
+#Contact
+{
+    /* top: 3%; */
+    background-image: url('Assets/HeaderBG.webp');
+        margin-top: -1.5%;
+    margin-bottom: -1.5%;
+    padding-top: 0.0008%;
+}
+
+#Seperator
+{
+        margin-bottom: 0%;
+}
+
 }
 
 @media screen and (max-width: 700px) {
@@ -119,7 +165,7 @@
     
     #Header h1
     {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto auto auto;
     }
     
     #GamePopUp
@@ -169,6 +215,24 @@
         width: 3%;
     }
 
+    .Showcase h1
+    {
+        font-size: 170%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .Showcase nav
+    {
+        margin-bottom: 10%;
+    }
+
+
+
+    #Title
+    {
+        font-size: 300%;
+    }
     #ContactForm
     {
     display: grid;
@@ -185,10 +249,13 @@
     margin-left: 30%;
 }
 
-#Header
+header
 {
-    grid-template-columns: auto auto auto;
-    justify-content: center;
+    background-image: url('Assets/HeaderBG.webp');
+    grid-template-columns: auto auto auto auto;
+    margin-top: -1.5%;
+    margin-bottom: -3%;
+    
 }
 
 h2, p, h1 {
@@ -198,7 +265,6 @@ h2, p, h1 {
 .Main {
     display: grid;
 }
-
 #PortraitImage {
     width: 60%;
     margin-left: -10px;
@@ -288,7 +354,7 @@ body {
     background-color: black;
     margin-top: -0.8%;
     margin-bottom: 0%;
-    padding-bottom: 0%;
+
     padding-top: 0%;
     height: 1%;
 }
@@ -313,4 +379,101 @@ body {
 {
     color: greenyellow;
     text-align: center;
+}
+
+
+
+
+#AboutMe h2
+{
+    text-align:left;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-family: fac;
+    font-size: 190%;
+}
+
+
+
+#AboutMe
+{
+    Margin-bottom: 7%;
+    text-decoration-style: double;
+}
+
+#Title
+{
+    font-size: 300%;
+    font-family: itsadzoke;
+}
+
+#Contact
+{
+    font-family: cyen;
+    font-size:120%;
+}
+
+#AboutMe img
+{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: -4%;
+    width: 90%;
+    margin-right: 5%;
+    height: 93%;
+    z-index: -5;
+}
+
+.ImageText img
+{
+    position: absolute;
+    margin-right: 200%;
+    margin-top: -2%;
+    margin-left: -26%;
+    width: 52%;
+    height: 70%;
+    z-index: -5;
+}
+/* Duct-taping for the blackbox backgrounds for now... */
+@media screen and (max-width: 700px) {
+.ImageText img
+{
+    position: absolute;
+    margin-right: 200%;
+    margin-top: -5%;
+    margin-left: -50%;
+    width: 100%;
+    height: 83%;
+    z-index: -5;
+}
+
+.ImageText h2 
+{
+    margin-left:5%;
+    margin-right:5%;
+}
+}
+
+@media screen and (max-width: 520px) {
+.ImageText img
+{
+
+    height: 90%;
+}
+}
+
+@media screen and (max-width: 1450x) {
+
+}
+
+
+h3, h2, h1, h4, p {
+    color: azure;
+}
+
+
+#Resume
+{
+    width:"1%";
+    height:"1%";
 }
