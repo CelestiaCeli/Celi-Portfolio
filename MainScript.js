@@ -111,7 +111,7 @@ function OnLeave(element)
             Game = true;
             break;
         case(SealWebsite):
-            File = "Assets/Games/SealWebsite.webp";
+            File = "Assets/Games/peakcinema.jpg";
             Game = true;
             break;
         case(AboutMeBETA):
