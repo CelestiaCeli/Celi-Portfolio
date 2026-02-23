@@ -14,6 +14,16 @@ body {
     text-align: center;
 }
 
+#SeperatorEye
+{
+    position: sticky;
+    top: 25%;
+    left: 50%;
+    scale: 150%;
+    margin-top: -100%;
+
+}
+
 #Resume img
 {
     width:"1%";

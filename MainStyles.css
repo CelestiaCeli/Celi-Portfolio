@@ -24,7 +24,7 @@
 
 
 @media screen and (min-width: 700px) {
-    
+
 .Main {
     grid-template-columns: auto auto;
 }
@@ -54,6 +54,16 @@
 #Header h1
 {
     grid-template-columns: auto auto auto auto;
+    text-size-adjust: 60%;
+}
+
+#hamburgerMenu img
+{
+    position: sticky;
+    top: 3%;
+    left: 90%;
+    scale: 1;
+
 }
 
 .Showcase
@@ -114,7 +124,6 @@
     background-image: url('Assets/HeaderBG.webp');
         margin-top: -1.5%;
     margin-bottom: -1.5%;
-    padding-top: 0.0008%;
 }
 
 #Seperator
@@ -125,55 +134,55 @@
 }
 
 @media screen and (max-width: 700px) {
-    
+
     .Main {
         grid-template-columns: auto;
     }
-    
+
     h2, p, a {
         font-size:x-large;
     }
-    
+
     .ImageText
     {
         margin-bottom: 10%;
         margin-right: 0%;
     }
-    
+
     .Showcase p
     {
         margin-left: 4%;
         margin-right: 4%;
     }
-    
+
     #Games
     {
         grid-template-columns: auto
     }
-    
+
     #Art
     {
         grid-template-columns: auto
     }
 
-    
-    
+
+
     .Footer img
     {
         width: 2%;
     }
-    
+
     #Header h1
     {
         grid-template-columns: auto auto auto auto;
     }
-    
+
     #GamePopUp
     {
         position: relative;
         bottom: 50%;
     }
-    
+
     #GamePopUp img
     {
         position: absolute;
@@ -181,7 +190,7 @@
         left: 0%;
         width: 30%;
     }
-    
+
     #PopUpText
     {
         position: absolute;
@@ -191,7 +200,7 @@
         display:grid;
         z-index: 100;
     }
-    
+
     #Themes img
     {
         position: absolute;
@@ -199,7 +208,7 @@
         right: 3%;
         width: 3%;
     }
-    
+
     .ArtSlideArrows img
     {
         position: absolute;
@@ -207,7 +216,7 @@
         right: 3%;
         width: 3%;
     }
-    
+
     #ArrowLeft img
     {
         position: absolute;
@@ -249,13 +258,23 @@
     margin-left: 30%;
 }
 
+body
+{
+    margin-top: -5%;
+    margin-bottom: -5%;
+}
+
 header
 {
     background-image: url('Assets/HeaderBG.webp');
     grid-template-columns: auto auto auto auto;
-    margin-top: -1.5%;
+    margin-top: -3%;
     margin-bottom: -3%;
-    
+    position: static;
+    top: -5%;
+    bottom: -5%;
+
+
 }
 
 h2, p, h1 {
@@ -343,20 +362,14 @@ body {
     width: 100%;
 }
 
-#SeperatorEye
-{
-    position:absolute;
-    right: 45%;
-    width: 10%;
-}
 
 .Seperator div {
     background-color: black;
-    margin-top: -0.8%;
+    margin-top: 1%;
     margin-bottom: 0%;
 
-    padding-top: 0%;
-    height: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
 #Games a {
@@ -371,8 +384,23 @@ body {
 {
     width: 100%;
     height: 30%;
+    margin-bottom: -1.5%;
+    margin-top: -1.5%;
 
     object-fit: fill;
+}
+
+.ImageText, #AboutMe, #Autobiography
+{
+    background: rgba(0%, 0%, 0%, 40%);
+    border-radius: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-right: 3%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 #ArtSection a
@@ -384,7 +412,7 @@ body {
 
 
 
-#AboutMe h2
+#AboutMe h2, #Autobiography h2
 {
     text-align:left;
     margin-right: 10%;
@@ -405,6 +433,8 @@ body {
 {
     font-size: 300%;
     font-family: itsadzoke;
+    position: sticky;
+    top: 1%;
 }
 
 #Contact
@@ -447,7 +477,7 @@ body {
     z-index: -5;
 }
 
-.ImageText h2 
+.ImageText h2
 {
     margin-left:5%;
     margin-right:5%;
@@ -469,11 +499,4 @@ body {
 
 h3, h2, h1, h4, p {
     color: azure;
-}
-
-
-#Resume
-{
-    width:"1%";
-    height:"1%";
 }
