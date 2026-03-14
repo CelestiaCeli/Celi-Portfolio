@@ -21,7 +21,16 @@ body {
     left: 50%;
     scale: 150%;
     margin-top: -100%;
+    z-index: 0;
+}
 
+#SeperatorEye img
+{
+    z-index: 0;
+}
+.SeperatorImage
+{
+    z-index: -1;
 }
 
 #Resume img

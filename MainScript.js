@@ -56,3 +56,8 @@ function ThemeSwitch(element)
             }
     }
 }
+
+function HamburgerPopUp()
+{
+    
+}
