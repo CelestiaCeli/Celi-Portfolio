@@ -1,0 +1,207 @@
+/* Universal Changes */
+
+	/* Text */
+
+		@font-face {
+			font-family: itsadzoke;
+			src: url('../../Assets/Fonts/itsadzoke-046.otf');
+		}
+
+	/* Body */
+
+		.Main {
+			grid-template-columns: auto auto;
+		}
+
+	/* Background */
+
+		body {
+			align-items: center;
+			background-image: url('../../Assets/Background.webp');
+			background-repeat: repeat-y;
+			background-size: 100%;
+			margin: 0;
+		}
+
+	/* Sticky Elements */
+
+		#Themes img
+		{
+			position: sticky;
+			top: 0.8vw;
+			left: 90vw;
+			width: 6vw;
+			z-index: 2;
+		}
+
+/* Resume Properties */
+
+	#resume #skillShowcase
+	{
+		margin-top: -3vw;
+		grid-template-columns: auto auto;
+		display: grid;
+	}
+
+	#resume h2, .Showcase p
+	{
+		margin-left:5vw;
+		margin-right:5vw;
+	}
+
+	#recentProject img
+	{
+		width: 17vw;
+		margin: auto;
+		display: block;
+	}
+
+	#recentProject
+	{
+		margin-top: -1.5vw;
+	}
+
+	#recentProject #imageSubtext p
+	{
+		margin-top: -1.5vw;
+		margin-bottom: -1.5vw;
+		padding: 0%;
+	}
+
+	#resume #extra p 
+	{
+		font-weight: bold;
+		justify-content: center;
+		align-items: center;
+		align-self: center;
+	}
+	/* Resume Image */
+
+		#NyanileMain
+		{
+			position:sticky;
+			top: 10vw;
+			z-index: -1;
+		}
+
+		#nyanileStopper
+		{
+			max-height: 80%;
+		}
+/* Header */
+
+	/* Title */
+
+		#title
+		{
+			font-size: 3.2vw;
+			position: sticky;
+			font-family: itsadzoke;
+			top: 0.5vw;
+			margin-bottom: -15vw;
+		}
+
+		#titleBounds 
+		{
+			margin-bottom: -4vw;
+		}
+
+	/* Toolbar */
+
+	#toolbar, #miniToolbar
+	{
+		grid-template-columns: auto;
+		align-items: center;
+		padding-left: 25vw;
+		padding-right: 25vw;
+		display: grid;
+		z-index: 2;
+		top: 0vw;
+		transition: width 2s;
+		bottom: 40vw;
+		position: sticky;
+	}
+
+	#toolbarBackground
+	{
+		filter: opacity(33%);
+		height: 5.5vw;
+		margin-left: -25vw;
+		margin-bottom: 0vw;
+		width: 100vw;
+	}
+
+	#toolbarEntry
+	{
+		margin-top: -6.6vw;
+		margin-left: -25vw;
+	}
+
+/* Info Sections */
+
+	/* Background */ 
+
+	#resume, #Autobiography, #AboutMe
+	{
+		margin-bottom: 10vw;
+		margin-right: 20vw;
+
+		background: rgba(0, 0, 0, 40%);
+		border-radius: 15vw;
+		margin: 5vw;
+		padding-right: 3vw;
+		padding-top: 2vw;
+		padding-bottom: 2vw;
+	}
+
+	/* About Me */
+
+		#aboutMeHeader 
+		{
+			display: flex;
+			justify-content: center;
+		}	
+
+		#aboutMeHeader > *
+		{
+			-webkit-text-stroke: 0.2vw blue;
+			font-size: 5vw;
+			margin-top: 0vw;
+			margin-bottom: 0vw;
+			text-align: center;
+		}
+		#AboutMe
+		{
+			font-size: 1.5vw;
+		}
+	/* Autobiography */
+
+		#Autobiography h2
+		{
+			text-align:left;
+			margin-right: 10%;
+			margin-left: 10%;
+			font-family: fac;
+			font-size: 190%;
+		}
+
+/* NOT IMPLEMENTED YET
+
+/* Portfolio Slide */ /*
+
+	#AboutMe #portfolioSlide
+	{
+		height: 10vw;
+		width: 80vw;
+	}
+
+	#AboutMe #portfolioSlide img
+	{
+		flex: 0 0 15vw;
+		object-fit: cover;
+		margin-top: -2vw;
+		width:	90vw;
+		height: 13vw;
+	}
+*/
+

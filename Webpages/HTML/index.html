@@ -1,0 +1,307 @@
+<!--
+HTML to-do
+
+TODO: Fix formatting errors
+- Black boxes
+- text not scaling properly
+- promo video not scaling properly
+~~- Cesaster text
+~~- Fix black bars
+TODO: Rebrand website to be more on key with identity
+- Change name
+- Add more artwork
+~~- mention party geists
+~~- Decorate footer
+- Add better video overview
+TODO: Add more interactive elements
+- Make eye change as navigating website
+- Add art highlighting
+- Add previous works inspecting
+- Add hover on text
+TODO: some art changes
+- Background can be changed a lot
+- redesign the eye icon
+- Add a digital resume to the website
+- Rebrand your identity
+- Banner can be completely changed
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Style Sheets -->
+        <link href="../CSS/MainStyles.css" rel="stylesheet">
+		<link href="../CSS/index.css" rel="stylesheet">
+
+		<!-- Classes/Objects -->
+		<script src="../JavaScript/Objects/Fader.js"></script>
+
+		<!-- Main Script Files -->
+		<script src="../JavaScript/MainScript.js"></script>
+		<script src="../Javascript/index.js"></script>
+
+        <title>
+            About Me - Cesaster
+        </title>
+    </head>
+
+
+
+    <body>
+        <!--Important funtions executed on website visit-->
+
+
+
+		<div id="titleBounds">
+            <h1 id="title">
+                Cesaster
+            </h1>
+			<br> <br>
+			</div>
+
+			<nav id="toolbar" >
+				<img src="../../Assets/HeaderBackground.png" id="toolbarBackground">
+				<!-- Hidden for not being ready yet
+               <a href="Extended.html" id="toolbarEntry">
+                    <h1>
+                    Portfolio
+                    </h1>
+				-->
+                </a>
+                <a href="index.html" id="toolbarEntry">
+                    <h1>
+                    About Me
+                    </h1>
+                </a>
+            </nav>
+        <div id="Menu">
+        </div>
+
+            <a onclick=ThemeSwitch(ThemesImage) id="Themes"><img src="../../Assets/Interactables/Eye/BurningEye.png" alt="Activate theme swap" id="ThemesImage"></a>
+
+        <main>
+
+            <section class="Main">
+
+				<div id="nyanileStopper">
+					<img src="../../Source/Placeholder.png" alt="An image of my fursona!" id="NyanileMain">
+				</div>
+                <div id="resume">
+					<div id="mainInfo">
+						<br> 
+						<h1>Hello, my name is Celeste!</h1>
+						<p>
+							INSERT HOOK HERE
+						<p>
+							I'm a 21 year old canadian game designer with a passion in gaming and computer science I'm a 
+							21 year old canadian game designer who loves and specialises in programming and art! I like 
+							to explore different subjects and unique mechanics that follow a standard! 
+						</p>
+
+					</div>
+					
+					<div id="skills">
+						<h1>
+							Skills
+						</h1>
+
+						<div id="skillShowcase">
+
+							<div id="softSkills">
+								<h2>
+									Soft Skills
+								</h2>
+
+								<ul>
+									<li>
+										<p>
+											INSERT SKILL HERE
+										</p>
+									</li>
+									<li>
+										<p>
+											Great Leadership paired with effective communication
+										</p>
+									</li>
+									<li>
+										<p>
+											Motivational while seeking out further areas of growth
+										</p>
+									</li>
+									<li>
+										<p>
+											INSERT SKILL HERE
+										</p>
+									</li>
+
+								</ul>
+							</div>
+
+							<div id="hardSkills">
+								<h2> 
+									Hard Skills 
+								</h2>
+								
+								<ul>
+								
+									<li>
+										<p>
+											Two years of expertise in programming, in addition to a college degree
+										</p>
+									</li>
+									<li>
+										<p>
+											C++ - Unreal Engine 
+										</p>
+									</li>
+									<li>
+										<p>
+											C# - Unity Engine
+										</p>
+									</li>
+									<li>
+										<p>
+											High typing speed leading to great efficiency – 110 wpm!
+
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					
+					<div id="recentProject">
+						<!-- <a href="Banana.com"> -->
+							<h2>
+								Recent Project
+							</h2>
+							<img src="../../Source/Placeholder.png">
+							<h2> Party Geists </h2>
+						<!-- </a>
+						<a>
+							<p id="imageSubtext"> Check out more? </p>
+						</a>
+						<div id="extra">
+							<p> 
+								An expanded version of my resume is available on my portfolio
+							</p>
+						</div>
+						-->
+
+                	</div>
+				</div>
+
+            </section>
+
+			
+        <section id="Contact">
+			<div class="seperator"> 
+			</div>
+
+            <h2>Contact</h2>
+            <form id="ContactForm">
+				<div>
+					<p>Email:</p>
+				</div>
+                <input type="text" id="Email" name="Email" maxlength="50" size="50">
+				<div>
+					<p>Name:</p>
+				</div>
+                <input type="text" id="Name" name="Name" maxlength="40" size="40">
+				<div>
+					<p>Inquiry:</p>
+				</div>
+                <textarea size="30" id="ContextField" name="ContextField">
+				</textarea>
+				<div>
+				</div>
+                <input type="submit" value="Submit" id="Submit">
+            </form>
+			<br> <br>
+
+			<div class="seperator"> 
+			</div>
+        </section>
+
+            <section id="AboutMe">
+				<div id="aboutMeHeader">
+					<h2>
+					About Me
+					</h2>
+				</div>
+
+                <p>
+					A multi-perspective team-worker; I am Celeste. A computer science programmer who has a background in the games industry. 
+					I have been involved in several projects ranging from Game Jams to full on Indie. All using various languages like C++ and C#.
+                </p>
+				<div class="seperator"> </div>
+				<br>
+				<!-- element is complex and auto updates, being handled in javascript -->
+				<div id="portfolioSlide">
+					<img id="background" src="../../Source/Placeholder.png">
+				</div>
+				<div class="seperator"> </div>
+				<br>
+
+                <p>
+					Additionally, my interests extends beyond regular programming; working in a team-oriented face-paced environment 
+					is a thrilling experience, ensuring that I am also having fun in my career. leading me more susceptible to a better workflow. 
+					I yearn to learn from others and aid them back. I tend to approach a problem from multiple perspectives, choosing the best 
+					depending on the situation.
+                </p>
+                <p>
+					On the unprofessional side, I have also been a hardcore gamer for years. 
+					I enjoy a wide variety of games and have a personal library of almost one thousand games.
+					Video Games are a medium I take seriously. I understand they are a form of art rather than a toy.
+                </p>
+                <p>
+					Considering all, I am a dedicated programmer with an interest in game development. 
+					Further contact can be found below.
+					Thank you
+                </p>
+                </section>
+        </main>
+
+
+    <div class="Footer">
+
+        <div id="SocialMedia">
+            <a href="https://bsky.app/"><img src="../../Assets/Logos/Bluesky.svg" alt="Bluesky Logo"></a>
+            <a href="https://www.discord.com"><img src="../../Assets/Logos/Discord.svg" alt="Discord Logo"></a>
+            <a href="https://www.matrix.org"><img src="../../Assets/Logos/Matrix.svg" style="filter: invert(100)" alt="Matrix Logo"></a>
+            <a href="https://www.youtube.com/@Xorgel-Celiantia"><img src="../../Assets/Logos/youtube.svg" alt="Youtube Logo"></a>
+        </div>
+
+		<div id="contextOptions">
+			<a href="#Header" id="LeftSide">
+				Back to top
+			</a>
+			<br>
+			<a href="#Header" id="LeftSide">
+				Portfolio
+			</a>
+			<a href="#Header" id="LeftSide">
+				About Me
+			</a>
+			<a href="Credits.html" id="LeftSide">
+				Special Thanks
+			</a>
+		</div>
+
+		<div id="copyright"> 
+			<p>
+				@2025, Celeste/Cesaster, Email
+			</p>
+		</div>
+	</div>
+
+    </body>
+</html>
