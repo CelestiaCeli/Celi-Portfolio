@@ -6,6 +6,10 @@
 			font-family: itsadzoke;
 			src: url('../../Assets/Fonts/itsadzoke-046.otf');
 		}
+		
+		h2, p, h1 {
+			font-size: 1.5vw;
+		}
 
 	/* Body */
 

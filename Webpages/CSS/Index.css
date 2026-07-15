@@ -1,0 +1,21 @@
+/* Universal Changes */
+
+	/* Background */
+
+		body {
+			align-items: center;
+			background-image: radial-gradient(grey, grey, black);
+			background-size: 100vw 55vw;
+			align-content: center;
+		}
+
+/* Text */
+
+		h2 {
+			padding: 22vw;
+			margin: 0vw;
+			font-size: 3vw;
+			text-align: center;
+			color: white;
+			text-shadow: 1vw 1vw black;
+		}
