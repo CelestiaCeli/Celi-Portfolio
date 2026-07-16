@@ -1,0 +1,221 @@
+/* Universal Changes */
+
+	/* Body */
+
+		.Main {
+			grid-template-columns: auto auto;
+		}
+
+	/* Background */
+
+		body {
+			align-items: center;
+			background-image:linear-gradient(to bottom, rgba(250, 0, 0, 0.5), rgba(0, 0, 255, 0.5)), url("../../../Assets/Backgrounds/TitleBackground.webp");
+			background-repeat: repeat-y;
+			background-size: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+/* Resume Properties */
+
+	.Main 
+	{
+		display: grid;
+	}
+
+	#resume
+	{
+		animation: fadein 0.6s;
+	}
+
+	#resume > *
+	{
+		align-self: center;
+	}
+
+	/* Main Info */
+
+	#resume #mainInfo img
+	{
+		width: 15vw;
+		margin: auto;
+		display: block;
+	}
+
+	/* Text */
+
+		#resume h2, .Showcase p
+		{
+			margin-left:5vw;
+			margin-right:5vw;
+		}
+
+	/* Skills Showcase */
+
+		#resume #skillShowcase
+		{
+			margin-top: -3vw;
+			grid-template-columns: auto auto;
+			display: grid;
+		}
+
+	/* Recent project */
+
+		#recentProject img
+		{
+			width: 17vw;
+			margin: auto;
+			display: block;
+		}
+
+		#recentProject
+		{
+			margin-top: -1.5vw;
+		}
+
+		#recentProject p
+		{
+			margin-top: -1.7vw;
+			padding: 0%;
+		}
+
+	#resume #extra p 
+	{
+		font-weight: bold;
+		justify-content: center;
+		align-items: center;
+		align-self: center;
+	}
+
+	/* Resume Image */
+
+		#NyanileMain
+		{
+			margin-right: 7vw;
+			position:sticky;
+			top: 10vw;
+			z-index: -1;
+		}
+
+		#nyanileStopper
+		{
+			max-height: 55vw;
+		}
+
+		.Main img
+		{
+			margin-top: 10vw;
+			margin-left: 0vw;
+			width: 100%;
+		}
+
+
+/* Header */
+
+	/* Title */
+
+
+		#title
+		{
+			background-image:linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(250, 0, 0, 0.5)), url("../../../Assets/Backgrounds/TitleBackground.webp");
+
+			height: 7vw;
+			display:inline-block;
+			width: 98.95vw;
+			padding-top: 0;
+			margin-top: 0;
+		}
+
+		#title h1
+		{
+			font-size: 3.2vw;
+			position: sticky;
+			font-family: itsadzoke;
+			top: 0.5vw;
+			margin: 0vw;
+		}
+
+	
+	/* Toolbar */
+
+	#toolbar, #miniToolbar
+	{
+		grid-template-columns: auto;
+		align-items: center;
+		padding-left: 25vw;
+		padding-right: 25vw;
+		display: grid;
+		z-index: 2;
+		top: 0vw;
+		transition: width 2s;
+		bottom: 40vw;
+		position: sticky;
+	}
+
+	#toolbarBackground
+	{
+		filter: opacity(33%);
+		height: 5.5vw;
+		margin-left: -25vw;
+		margin-bottom: 0vw;
+		width: 100vw;
+	}
+
+	#toolbarEntry
+	{
+		margin-top: -6.6vw;
+		margin-left: -25vw;
+	}
+
+/* Info Sections */
+
+	/* Background */ 
+
+	#resume, #Autobiography, #AboutMe
+	{
+		padding-right:5vw;
+		padding-left: 5vw;
+
+		padding-bottom: 2vw;
+		padding-top: 2vw;
+
+		background: rgba(0, 0, 0, 40%);
+
+		border-radius: 10vw;
+		margin: 3vw;
+	}
+
+	/* About Me */
+
+		#aboutMeHeader 
+		{
+			display: flex;
+			justify-content: center;
+		}	
+
+		#aboutMeHeader > *
+		{
+			-webkit-text-stroke: 0.2vw blue;
+			font-size: 5vw;
+			margin-top: 0vw;
+			margin-bottom: 0vw;
+			text-align: center;
+		}
+		#AboutMe
+		{
+			font-size: 1.5vw;
+		}
+
+	/* Autobiography */
+
+		#Autobiography h2
+		{
+			text-align:left;
+			margin-right: 10%;
+			margin-left: 10%;
+			font-family: fac;
+			font-size: 190%;
+		}
+
+
