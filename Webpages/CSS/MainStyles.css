@@ -149,14 +149,20 @@
 
 	/* Context Options */
 
-		#contextOptions 
+		#contextOptions
 		{
 			display: grid;
-			grid-template-columns: auto auto;
-			gap: 5vw;
+			grid-template-columns: auto;
+			gap: 0.5vw;
 			align-items: center;
 			justify-self:center; 
 			font-size: 1.5vw;
+		}
+
+		#contextOptions a p
+		{
+			gap: 0vw;
+			margin: 0;
 		}
 
 /* Contact */
@@ -170,7 +176,7 @@
 			padding-bottom: 2.5vw;
 		}
 
-		#contextField
+		.contextField
 		{
 			padding: 0.5vw;
 			margin: 0.5vw;
@@ -191,11 +197,17 @@
 
 		#contactForm 
 		{
+			display: flex;
+			grid-template-columns: auto;
+			justify-content: center;
+			flex-direction: column;
+
+		}
+
+		#contactForm div
+		{
 			display: grid;
 			grid-template-columns: auto auto;
-			margin-right: 28vw;
-			margin-left: 25vw;
-
 		}
 
 		#contactSection h2
@@ -203,6 +215,11 @@
 			font-size: 2.5vw;
 			maxlength: 40;
 			size: 40;
+		}
+
+		.contextField
+		{
+			margin: 1vw;
 		}
 		
 		#contactSubtext
@@ -213,12 +230,14 @@
 			margin-left: 10vw;
 		}
 
+		#contactForm #submit
+		{
+			margin-left: 5.5vw;
+		}
+
 		#contactForm > *
 		{
-			align-items: center;
 			align-self: center;
-			justify-content: center;
-
 		}
 
 		/* Form */
