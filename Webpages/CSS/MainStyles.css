@@ -1,12 +1,45 @@
 /* Universal */
 
+	/* Effects */
+
+	#invert
+	{
+		filter: invert(1);
+	}
 	/* Text */
 		h3, h2, h1, h4, p 
 		{
 			color: azure;
-			font-size: 1.5vw;
 			text-align: center;
 		}
+
+		h3 
+		{
+			font-size: 2.0vw;
+		}
+
+		h2
+		{
+			font-size: 2.3vw;
+		}
+
+		h1
+		{
+			font-size: 2.5vw;
+		}
+
+		h4
+		{
+			font-size: 1.7vw;
+		}
+
+		p
+		{
+			font-size: 1.5vw;
+		}
+
+
+
 
 		@font-face 
 		{
@@ -116,6 +149,16 @@
 
 	/* Context Options */
 
+		#contextOptions 
+		{
+			display: grid;
+			grid-template-columns: auto auto;
+			gap: 5vw;
+			align-items: center;
+			justify-self:center; 
+			font-size: 1.5vw;
+		}
+
 /* Contact */
 
 		#contact 
@@ -124,6 +167,26 @@
 			background-repeat: repeat-y;
 			background-size: 100%;
 			margin: 0;
+			padding-bottom: 2.5vw;
+		}
+
+		#contextField
+		{
+			padding: 0.5vw;
+			margin: 0.5vw;
+		}
+
+		input 
+		{
+			width: 45vw;
+			height: 2vw;
+		}
+
+		textarea
+		{
+			width: 45vw;
+			height: 7vw;
+			resize:none;
 		}
 
 		#contactForm 
@@ -138,6 +201,8 @@
 		#contactSection h2
 		{
 			font-size: 2.5vw;
+			maxlength: 40;
+			size: 40;
 		}
 		
 		#contactSubtext

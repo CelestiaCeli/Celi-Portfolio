@@ -7,3 +7,14 @@ body {
     background-image: url("../../Assets/Backgrounds/prawny-seamless-2109397.jpg");
     color: azure;
 }
+
+#resources
+{
+	display: flex;
+	justify-content: center;
+}
+
+.creditsList
+{
+	display: grid;
+}
