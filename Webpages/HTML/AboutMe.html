@@ -50,42 +50,37 @@ TODO: some art changes
         <title>
             About Me - Cesaster
         </title>
+
+
     </head>
 
 
 
     <body>
-        <!--Important funtions executed on website visit-->
+		<!-- Sticky Elements -->
 
-
-
-		<div id="titleBounds">
-            <h1 id="title">
-                Cesaster
+	<section id="title">
+            <h1>
+                Celeste
             </h1>
-			<br> <br>
-			</div>
-
+	<!--
 			<nav id="toolbar" >
 				<img src="../../Assets/HeaderBackground.png" id="toolbarBackground">
-				<!-- Hidden for not being ready yet
+				 Hidden for not being ready yet
                <a href="Extended.html" id="toolbarEntry">
                     <h1>
                     Portfolio
                     </h1>
-				-->
                 </a>
+			
                 <a href="index.html" id="toolbarEntry">
                     <h1>
                     About Me
                     </h1>
                 </a>
             </nav>
-        <div id="Menu">
-        </div>
-
-            <a onclick=ThemeSwitch(ThemesImage) id="Themes"><img src="../../Assets/Interactables/Eye/BurningEye.png" alt="Activate theme swap" id="ThemesImage"></a>
-
+		-->
+		</section>
         <main>
 
             <section class="Main">
@@ -96,7 +91,7 @@ TODO: some art changes
                 <div id="resume">
 					<div id="mainInfo">
 						<br> 
-						<h1>Hello, my name is Celeste!</h1>
+						<h2>Hello, my name is Celeste!</h2>
 						<p>
 							INSERT HOOK HERE
 						<p>
@@ -108,16 +103,16 @@ TODO: some art changes
 					</div>
 					
 					<div id="skills">
-						<h1>
+						<h2>
 							Skills
-						</h1>
+						</h2>
 
 						<div id="skillShowcase">
 
 							<div id="softSkills">
-								<h2>
+								<h3>
 									Soft Skills
-								</h2>
+								</h3>
 
 								<ul>
 									<li>
@@ -145,9 +140,9 @@ TODO: some art changes
 							</div>
 
 							<div id="hardSkills">
-								<h2> 
+								<h3> 
 									Hard Skills 
-								</h2>
+								</h3>
 								
 								<ul>
 								
@@ -183,8 +178,8 @@ TODO: some art changes
 							<h2>
 								Recent Project
 							</h2>
-							<img src="../../Source/Placeholder.png">
-							<h2> Party Geists </h2>
+							<img src="../../Source/Placeholder.png" alt="An image showcasing my most recent endavour">
+							<h3> Party Geists </h3>
 						<!-- </a>
 						<a>
 							<p id="imageSubtext"> Check out more? </p>
@@ -202,29 +197,37 @@ TODO: some art changes
             </section>
 
 			
-        <section id="Contact">
+        <section id="contact">
 			<div class="seperator"> 
 			</div>
 
-            <h2>Contact</h2>
-            <form id="ContactForm">
-				<div>
-					<p>Email:</p>
-				</div>
-                <input type="text" id="Email" name="Email" maxlength="50" size="50">
-				<div>
-					<p>Name:</p>
-				</div>
-                <input type="text" id="Name" name="Name" maxlength="40" size="40">
-				<div>
-					<p>Inquiry:</p>
-				</div>
-                <textarea size="30" id="ContextField" name="ContextField">
-				</textarea>
-				<div>
-				</div>
-                <input type="submit" value="Submit" id="Submit">
-            </form>
+			<div id="contactSection">
+				<h2>
+					Contact
+				</h2>
+				<p id="contactSubtext">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor porttitor turpis, at suscipit ipsum vestibulum sit amet. 
+					Ut semper enim nec tempor molestie. Morbi dictum ligula et felis vestibulum ornare.
+				</p>
+				<form id="contactForm">
+					<div>
+						<p>Email:</p>
+					</div>
+					<input type="text" id="Email" name="Email" maxlength="50" size="50">
+					<div>
+						<p>Name:</p>
+					</div>
+					<input type="text" id="Name" name="Name" maxlength="40" size="40">
+					<div>
+						<p>Inquiry:</p>
+					</div>
+					<textarea id="ContextField" name="ContextField">
+					</textarea>
+					<div>
+					</div>
+					<input type="submit" value="Submit" id="Submit">
+				</form>
+			</div>
 			<br> <br>
 
 			<div class="seperator"> 
@@ -242,14 +245,15 @@ TODO: some art changes
 					A multi-perspective team-worker; I am Celeste. A computer science programmer who has a background in the games industry. 
 					I have been involved in several projects ranging from Game Jams to full on Indie. All using various languages like C++ and C#.
                 </p>
+				<!-- Commented out - work in progress.
 				<div class="seperator"> </div>
 				<br>
-				<!-- element is complex and auto updates, being handled in javascript -->
 				<div id="portfolioSlide">
-					<img id="background" src="../../Source/Placeholder.png">
+					<img id="background" src="../../Source/Placeholder.png" alt="Background for the portfolio slide showcasing my art">
 				</div>
 				<div class="seperator"> </div>
 				<br>
+				-->
 
                 <p>
 					Additionally, my interests extends beyond regular programming; working in a team-oriented face-paced environment 
@@ -281,17 +285,19 @@ TODO: some art changes
         </div>
 
 		<div id="contextOptions">
-			<a href="#Header" id="LeftSide">
+			<a href="#Header" class="LeftSide">
 				Back to top
 			</a>
 			<br>
-			<a href="#Header" id="LeftSide">
+			<!--
+			<a href="#Header" class="LeftSide">
 				Portfolio
 			</a>
-			<a href="#Header" id="LeftSide">
+			<a href="#Header" class="LeftSide">
 				About Me
 			</a>
-			<a href="Credits.html" id="LeftSide">
+			-->
+			<a href="Credits.html" class="LeftSide">
 				Special Thanks
 			</a>
 		</div>
