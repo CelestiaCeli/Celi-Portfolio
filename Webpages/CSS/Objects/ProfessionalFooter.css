@@ -59,85 +59,11 @@
 			gap: 1vw;
 			align-items: center;
 			justify-self:center; 
-			margin-top: 0vw;
+			margin-bottom: 2.5vw;
 		}
 
 		#contextOptions a p
 		{
 			gap: 0vw;
-			margin: 0;
-		}
-
-/* Contact */
-
-		#contact 
-		{
-			background-image: url('../../Assets/Backgrounds/prawny-seamless-2109397.jpg');
-			background-repeat: repeat-y;
-			background-size: 100%;
-			margin: 0;
-			padding-bottom: 2.5vw;
-		}
-
-		.contextField
-		{
-			padding: 0.5vw;
-			margin: 0.5vw;
-		}
-
-		input 
-		{
-			width: 45vw;
-			height: 2vw;
-		}
-
-		textarea
-		{
-			width: 45vw;
-			height: 7vw;
-			resize:none;
-		}
-
-		#contactForm 
-		{
-			display: flex;
-			grid-template-columns: auto;
-			justify-content: center;
-			flex-direction: column;
-
-		}
-
-		#contactForm div
-		{
-			display: grid;
-			grid-template-columns: auto auto;
-		}
-
-		#contactSection h2
-		{
-			maxlength: 40;
-			size: 40;
-		}
-
-		.contextField
-		{
-			margin: 1vw;
-		}
-		
-		#contactSubtext
-		{
-			margin: 0.1vw;
-			margin-right: 10vw;
-			margin-left: 10vw;
-		}
-
-		#contactForm #submit
-		{
-			margin-left: 5.5vw;
-		}
-
-		#contactForm > *
-		{
-			align-self: center;
 		}
 

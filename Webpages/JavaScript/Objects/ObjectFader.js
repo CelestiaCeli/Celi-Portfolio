@@ -1,7 +1,7 @@
 import Fader from "./Fader.js"
 const DEFAULT_HIGHFADE = 100;
 const DEFAULT_LOWFADE = 0;
-const DEFAULT_TIME = 5;
+const DEFAULT_TIME = 5000000;
 const MILISECOND_AMPLIFIER = 100;
 
 export default class ObjectFader extends Fader
@@ -15,31 +15,30 @@ export default class ObjectFader extends Fader
 
 	static TimeOnly(_element, _time)
 	{
-		return new ObjectFader(DEFAULT_LOWFADE, DEFAULT_HIGHFADE, _time);
+		return new ObjectFader(_element, DEFAULT_LOWFADE, DEFAULT_HIGHFADE, _time);
 	}
 
 	static FadeOnly(_element, _lowFade, _highFade)
 	{
-		return new ObjectFader(_lowFade, _highFade, DEFAULT_TIME);
+		return new ObjectFader(_element, _lowFade, _highFade, DEFAULT_TIME);
 	}
 
 	OnScroll()
 	{
-		var Limitation
-		var totalHeight = document.body.scrollHeight;
-		var scrollHeight = window.scrollY;
+		const totalHeight = document.body.scrollHeight;
+		const scrollHeight = window.scrollY;
 		const TITLE_FADE = 40;
 		
-		var currHeightPercent = totalHeight / scrollHeight;
+		const currHeightPercent = totalHeight / scrollHeight;
 
 		if (currHeightPercent < TITLE_FADE && this.on == false)
 		{
-			console.log("Fading");
+			this.GenerateFade(this.element);
 			this.on = true;
 		}
 		else if (currHeightPercent > TITLE_FADE && this.on == true)
 		{
-			console.log("Coming back");
+			this.GenerateFade(this.element);
 			this.on = false;
 		}
 	}

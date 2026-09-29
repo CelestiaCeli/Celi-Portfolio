@@ -23,11 +23,12 @@
 	#title, #headerOptions
 	{
 		position: relative;
-		z-index: 3;
+		z-index: 2;
 	}
 
-	header h3 
+	#headerOptions h3 
 	{
+		z-index: 2;
 		font-size: 2.2vw;
 	}
 
@@ -40,7 +41,7 @@
 		left: 0;
 		right: 0;
 		height: 38%;
-		z-index: 3;
+		z-index: 1;
 		background-repeat:repeat-y;
 		background-size: 10%;
 		opacity: 0.33;

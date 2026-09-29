@@ -13,11 +13,11 @@ class Header extends Generator
 							"</h1>" +
 						"</section>" +
 						"<div id='generatedHeader'>" +
-						"<img id='headerBackground' src='../../../Assets/Headers/HeaderBackground.png'>" +
-						"<div id='headerOptions'>" +
-							"<a href='Resume.html'>" +
+						"<img id='headerBackground' src='../../../Assets/Backgrounds/Background.webp'>" +
+						"<header id='headerOptions'>" +
+							"<a href='AboutMe.html'>" +
 							"<h3>" + 
-							"Resume" +
+							"About Me" +
 							"</h3>" +
 							"</a>" +
 							"<a href='Extended.html'>" +
@@ -30,7 +30,7 @@ class Header extends Generator
 							"Promo Video" +
 							"</h3>" +
 							"</a>" +
-						"</div>" +
+						"</header>" +
 						"</header>"
 
 	}

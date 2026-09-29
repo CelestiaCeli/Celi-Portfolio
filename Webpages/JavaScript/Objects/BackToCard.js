@@ -7,7 +7,7 @@ class BackToCard extends Generator
 		super();
 		this.ID = "stickyElements";
 		this.content =	"<div>" +
-						"<a>" +
+						"<a href='/Webpages/HTML/Card.html'>" +
 						"<p>" +
 							"Back to Card" +
 						"</p>"

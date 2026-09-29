@@ -1,25 +1,289 @@
+<!--
+HTML to-do
+
+TODO: Fix formatting errors
+~~- Black boxes
+~~- text not scaling properly
+~~- Cesaster text
+~~- Fix black bars
+TODO: Rebrand website to be more on key with identity
+~~- Change name
+- Add more artwork
+~~- mention party geists
+~~- Decorate footer
+TODO: Add more interactive elements
+- Make eye change as navigating website
+TODO: some art changes
+- Background can be changed a lot
+- redesign the eye icon
+~~- Add a digital resume to the website
+- Rebrand your identity
+- Banner can be completely changed
+
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- Stylesheets -->
-		<link href="../CSS/MainStyles.css" rel="stylesheet">
-		<link href="../CSS/FriendPost.css" rel="stylesheet">
+		<!-- Style Sheets -->
+        <link href="../../CSS/MainStyles.css" rel="stylesheet">
+		<link href="../../CSS/Professional/AboutMe.css" rel="stylesheet">
 
-		<!-- Scripts -->
-		<script src="../JavaScript/MainScript.js"></script>
-		<script src="../Javascript/FriendPost.js"></script>
+		<!-- Style Classes -->
+
+		<link href="/Webpages/CSS/Objects/ProfessionalResume.css" rel="stylesheet">
+		<link href="/Webpages/CSS/Objects/AnimatedResume.css" rel="stylesheet">
+		<link href="/Webpages/CSS/Objects/ProfessionalHeader.css" rel="stylesheet">
+		<link href="/Webpages/CSS/Objects/ProfessionalFooter.css" rel="stylesheet">
+		<link href="/Webpages/CSS/Objects/StickyElements.css" rel="stylesheet">
+
+		<link href="/Webpages/CSS/Objects/StickyHeader.css" rel="stylesheet">
+		<link href="/Webpages/CSS/Objects/Slideshow.css" rel="stylesheet">
+
+		<!-- Classes/Objects -->
+		<script src="/Webpages/JavaScript/Objects/CasualHeader.js" type="module"></script>
+		<script src="/Webpages/JavaScript/Objects/Footer.js" type="module"></script>
+
+		<!-- Sticky Elements -->
+		<script src="/Webpages/JavaScript/Objects/BackToCard.js" type="module"> </script>
+
+		<script src="/Webpages/JavaScript/Objects/SocialMedia.js" type="module"></script>
+
+		<!-- Main Script Files -->
+		<script src="/Webpages/JavaScript/MainScript.js"></script>
+		<script src="/Webpages/JavaScript/Professional/AboutMe.js"></script>
 
         <title>
-            Felithamity
+            About Me - Felithamity
         </title>
-	</head>
-	<body>
-		<h1> 
-			Hi :3
-		</h1>
-	</body>
-</html>
+    </head>
 
+	<!-- Startup functions that generate predetermined objects -->
+	<body>
+		<script type='module'>
+			import ObjectFader from '../../JavaScript/Objects/ObjectFader.js'
+			try
+			{
+				let titleFade = ObjectFader.FadeOnly(document.getElementById('title'), 0, 100);
+				addEventListener('scroll', (event) => { titleFade.OnScroll() });
+			}
+			catch
+			{
+				console.log("Scrolling functionality is missing.");
+			}
+		</script>
+		<div id="warningPopUp">
+		</div>
+
+		<div id="title">
+			<p> test </p>
+		</div>
+
+		<div id='top'>
+		</div>
+		<div id='stickyElements'>
+		</div>
+		<div id='header'>
+		</div>
+
+        <main>
+
+            <section id="resumeSection">
+
+				<div id="nyanileStopper">
+					<img src="../../../Assets/Art/Fursona2.avif" alt="An image of my fursona!" id="NyanileMain">
+				</div>
+                <div id="resume" class="background">
+					<div id="mainInfo">
+						<img src="../../..//Assets/Logos/MainIcon.avif" alt="My personal logo">
+						<h2>Hello, my name is Celeste!</h2>
+						<p>
+							I am a Canadian Computer Scientist with a passion in developing videogames. 
+							I specialize in programming and art and I approach situations in various ways when 
+							performing critical problem solving. All while following a standard!
+						</p>
+
+					</div>
+					
+					<div id="skills">
+						<h2>
+							Skills
+						</h2>
+
+						<div id="skillShowcase">
+
+							<div id="softSkills">
+								<h3>
+									Soft Skills
+								</h3>
+
+								<ul>
+									<li>
+										<p>
+											Constantly shares progress, updating statuses on current tasks.
+										</p>
+									</li>
+									<li>
+										<p>
+											Great Leadership in college,
+										</p>
+									</li>
+									<li>
+										<p>
+											Motivational while seeking out further areas of growth; always learning!
+										</p>
+									</li>
+									<li>
+										<p>
+											Effective Communication
+										</p>
+									</li>
+
+								</ul>
+							</div>
+
+							<div id="hardSkills">
+								<h3> 
+									Hard Skills 
+								</h3>
+								
+								<ul>
+								
+									<li>
+										<p>
+											Two years of profiency in Game Programming
+										</p>
+									</li>
+									<li>
+										<p>
+											Languages such as C#, C++, HTML, and Python.
+										</p>
+									</li>
+									<li>
+										<p>
+											Familiar with both linux and windows environments; well adjusted to the terminal.
+										</p>
+									</li>
+									<li>
+										<a href="https://monkeytype.com/profile/Xorgel"> 
+											<p>
+												High typing speed leading to great efficiency – 110 wpm!
+											</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					
+					<div id="recentProject">
+						<a href="https://discord.gg/bnt3x7yPBh">
+							<h2>
+								Recent Project
+							</h2>
+							<img src="../../../Assets/Games/Static/PartyGeists-Static.jpg" alt="An image showcasing my most recent endavour">
+							<h3> 
+								Party Geists 
+							</h3>
+
+							<p>
+								A Zombie Survival Party Game!
+							</p>
+						</a>
+                	</div>
+				</div>
+
+            </section>
+ 
+			<section id="AboutMe" class="background">
+				<div id="aboutMeHeader">
+					<h2>
+						About Me
+					</h2>
+				</div>
+
+                <p>
+					A multi-perspective team-worker; I am Celeste. A computer science programmer who has a background in game development. 
+					I have been involved in several projects ranging from Game Jams to full on Indie. All using various languages like C++ and C#.
+                </p>
+
+                <p>
+					Additionally, my interests extends beyond regular programming; working in a team-oriented face-paced environment 
+					is a thrilling experience, ensuring that I am both having fun in my career and leading to a better workflow.
+					I yearn to learn from others and aid them back. I tend to approach a problem from multiple perspectives, choosing the best 
+					depending on the situation.
+                </p>
+                <p>
+					On the unprofessional side, I have also been a hardcore gamer for years. 
+					I enjoy a wide variety of games and have a personal library of almost one thousand games.
+					Video Games are a medium I take seriously. I understand they are a form of art rather than a toy. 
+					Contributing to such a medium, even software, would be fulfilling.
+                </p>
+                <p>
+					Considering all, I am a dedicated programmer with an interest in game development. 
+				</p>
+
+				<p>
+					Further contact can be found below.
+				</p>
+
+				<p>
+					Thank you
+                </p>
+
+            </section>
+
+			<section id="contact">
+				<div class="seperator"> 
+				</div>
+
+				<div id="contactSection">
+					<h2>
+						Contact
+					</h2>
+					<p id="contactSubtext">
+						There are various ways to contact me! 
+						You may contact me by filling details below, 
+						in addition you can reach me on discord by 
+						<a href="https://discord.gg/796ArU5p33"> 
+							clicking here! 
+						</a>
+					</p>
+					<form id="contactForm" action="mailto:felithiamity.maker130@passinbox.com" method="post">
+						<div>
+							<p>
+								Email:
+							</p>
+							<input type="text" class="contextField" name="Email" maxlength="50" size="50" required>
+						</div>
+						<div>
+							<p>
+								Name:
+							</p>
+							<input type="text" class="contextField" name="Name" maxlength="40" size="40" required>
+						</div>
+						<div>
+							<p>
+								Inquiry:
+							</p>
+							<textarea class="contextField" name="ContextField" required></textarea>
+						</div>
+						<input type="submit" value="Submit" id="submit" class="contextField" >
+					</form>
+				</div>
+
+			</section>
+		</main>
+
+	<footer id="footer">
+	</footer>
+
+    </body>
+</html>

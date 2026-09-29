@@ -37,24 +37,27 @@ TODO: some art changes
 
 		<!-- Style Classes -->
 
-		<link href="../../CSS/Objects/ProfessionalResume.css" rel="stylesheet">
-		<link href="../../CSS/Objects/AnimatedResume.css" rel="stylesheet">
-		<link href="../../CSS/Objects/ProfessionalHeader.css" rel="stylesheet">
-		<link href="../../CSS/Objects/ProfessionalFooter.css" rel="stylesheet">
-		<link href="../../CSS/Objects/StickyElements.css" rel="stylesheet">
+		<link href="/Webpages/CSS/Objects/ProfessionalResume.css" rel="stylesheet">
+		<link href="/Webpages/CSS/Objects/AnimatedResume.css" rel="stylesheet">
+		<link href="/Webpages/CSS/Objects/ProfessionalHeader.css" rel="stylesheet">
+		<link href="/Webpages/CSS/Objects/ProfessionalFooter.css" rel="stylesheet">
+		<link href="/Webpages/CSS/Objects/StickyElements.css" rel="stylesheet">
 
-		<link href="../../CSS/Objects/StickyHeader.css" rel="stylesheet">
-		<link href="../../CSS/Objects/Slideshow.css" rel="stylesheet">
+		<link href="/Webpages/CSS/Objects/StickyHeader.css" rel="stylesheet">
+		<link href="/Webpages/CSS/Objects/Slideshow.css" rel="stylesheet">
 
 		<!-- Classes/Objects -->
-		<script src="../../JavaScript/Objects/Header.js" type="module"></script>
-		<script src="../../JavaScript/Objects/Footer.js" type="module"></script>
+		<script src="/Webpages/JavaScript/Objects/Header.js" type="module"></script>
+		<script src="/Webpages/JavaScript/Objects/Footer.js" type="module"></script>
 
-		<script src="../../JavaScript/Objects/SocialMedia.js" type="module"></script>
+		<!-- Sticky Elements -->
+		<!-- <script src="/Webpages/JavaScript/Objects/BackToCard.js" type="module"> </script> -->
+
+		<script src="/Webpages/JavaScript/Objects/SocialMedia.js" type="module"></script>
 
 		<!-- Main Script Files -->
-		<script src="../../JavaScript/MainScript.js"></script>
-		<script src="../../JavaScript/Professional/AboutMe.js"></script>
+		<script src="/Webpages/JavaScript/MainScript.js"></script>
+		<script src="/Webpages/JavaScript/Professional/AboutMe.js"></script>
 
         <title>
             About Me - Felithamity
@@ -63,18 +66,6 @@ TODO: some art changes
 
 	<!-- Startup functions that generate predetermined objects -->
 	<body>
-		<script type='module'>
-			import ObjectFader from '../../JavaScript/Objects/ObjectFader.js'
-			try
-			{
-				let titleFade = ObjectFader.FadeOnly(document.getElementById('title'), 0, 100);
-				addEventListener('scroll', (event) => { titleFade.OnScroll() });
-			}
-			catch
-			{
-				console.log("Scrolling functionality is missing.");
-			}
-		</script>
 		<div id='top'>
 		</div>
 		<div id='stickyElements'>
@@ -87,11 +78,11 @@ TODO: some art changes
             <section id="resumeSection">
 
 				<div id="nyanileStopper">
-					<img src="../../../Assets/Art/nyanile.png" alt="An image of my fursona!" id="NyanileMain">
+					<img src="../../../Assets/Art/Fursona2.avif" alt="An image of my fursona!" id="NyanileMain">
 				</div>
                 <div id="resume" class="background">
 					<div id="mainInfo">
-						<img src="../../..//Assets/Logos/FelithiamityLogo.webp" alt="My personal logo">
+						<img src="../../..//Assets/Logos/MainIcon.avif" alt="My personal logo">
 						<h2>Hello, my name is Celeste!</h2>
 						<p>
 							I am a Canadian Computer Scientist with a passion in developing videogames. 
@@ -275,5 +266,20 @@ TODO: some art changes
 	<footer id="footer">
 	</footer>
 
+
+			<script type='module'>
+			import ObjectFader from '../../JavaScript/Objects/ObjectFader.js'
+			try
+			{
+				let titleFade = ObjectFader.FadeOnly('title', 0, 100);
+				addEventListener('scroll', (event) => { titleFade.OnScroll() });
+			}
+			catch
+			{
+				console.log("Scrolling functionality is missing.");
+			}
+		</script>
     </body>
+
+	
 </html>

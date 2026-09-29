@@ -104,11 +104,8 @@
 		background-color: black;
 		margin-top: 1%;
 		margin-bottom: 0%;
-
 		padding-top: 0.5%;
 		padding-bottom: 0.5%;
-		z-index: 1;
-		position: relative;
 	}
 
 /* Animations */
@@ -121,6 +118,21 @@
 			opacity: 0%;
 		}
 		to 
+		{
+			transform:translateY(0);
+			opacity: 100%;
+		}
+	}
+
+	@keyframes fadeindisappear
+	{
+		0% 
+		{
+			display: block;
+			transform:translateY(-5%);
+			opacity: 0%;
+		}
+		99% 
 		{
 			transform:translateY(0);
 			opacity: 100%;
@@ -141,13 +153,41 @@
 		}
 	}
 
+	@keyframes fadeoutdisappear
+	{
+		0% 
+		{
+			transform:translateY(-5%);
+			opacity: 100%;
+		}
+		99% 
+		{
+			transform:translateY(0);
+			opacity: 0%;
+		}
+		100%
+		{	
+			visibility:hidden;
+			position:absolute;
+		}
+	}
+
+
+		body {
+			align-items: center;
+			background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 255, 0.5)), url("../../../Assets/Backgrounds/Background.avif");
+			background-repeat: repeat-y;
+			background-size: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
 /* Contact */
 
 		#contact 
 		{
-			background-image: url('../../Assets/Backgrounds/prawny-seamless-2109397.jpg');
-			background-repeat: repeat-y;
-			background-size: 100%;
+			background-image: url('../../Assets/Headers/output.webp');
+			background-size: cover;
 			margin: 0;
 			padding-bottom: 2.5vw;
 		}
