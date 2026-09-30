@@ -43,9 +43,7 @@ export default class Fader
 			element.style.opacity = this.lowFade;
 			element.style.pointerEvents = 'none';
 		}
-		console.log("Fade Finished");
-
-		this.fadeIn = !this.fadeIn;
+		this.fadeOut = !this.fadeOut;
 	}
 
 	GenerateFade(_element)
@@ -53,8 +51,8 @@ export default class Fader
 		const lowFadePercent = this.lowFade + "%";
 		const highFadePercent = this.highFade + "%";
 
-		const lowOpacity = [ { opacity: lowFadePercent } ];
-		const highOpacity = [ { opacity: highFadePercent } ];
+		const lowOpacity = { opacity: lowFadePercent };
+		const highOpacity = { opacity: highFadePercent };
 
 		const fadeInAnim = [lowOpacity, highOpacity];
 		const fadeOutAnim = [highOpacity, lowOpacity];
@@ -62,20 +60,17 @@ export default class Fader
 		if (document.getElementById(_element) != null)
 		{
 			const element = document.getElementById(_element);
-			console.log(element);
-			//console.log("Fade out amt = " + highFadePercent);
-			const fadeSpeed = { duration: this.time, iterations: 1, complete: this.FadeFinished(element, this.fadeIn), }
-			if (this.fadeIn == true)
+			const fadeSpeed = { duration: this.time, iterations: 1, complete: this.FadeFinished(element, this.fadeOut), }
+			if (this.fadeOut == true)
 			{
-				console.log(this.fadeIn);
-				element.style.opacity = [fadeInAnim, fadeSpeed];
-				return (fadeInAnim, fadeSpeed);
+				element.animate(fadeOutAnim, fadeSpeed);
 			}
 			else
 			{
-				element.style.opacity = [fadeOutAnim, fadeSpeed];
-				return (fadeOutAnim, fadeSpeed);
+				element.animate(fadeInAnim, fadeSpeed);
 			}
+
+			return;
 		}
 	}
 }

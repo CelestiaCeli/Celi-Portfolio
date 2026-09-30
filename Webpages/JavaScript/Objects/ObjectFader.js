@@ -1,7 +1,7 @@
 import Fader from "./Fader.js"
 const DEFAULT_HIGHFADE = 100;
 const DEFAULT_LOWFADE = 0;
-const DEFAULT_TIME = 5000000;
+const DEFAULT_TIME = 5;
 const MILISECOND_AMPLIFIER = 100;
 
 export default class ObjectFader extends Fader
@@ -28,18 +28,17 @@ export default class ObjectFader extends Fader
 		const totalHeight = document.body.scrollHeight;
 		const scrollHeight = window.scrollY;
 		const TITLE_FADE = 40;
-		
 		const currHeightPercent = totalHeight / scrollHeight;
 
 		if (currHeightPercent < TITLE_FADE && this.on == false)
 		{
-			this.GenerateFade(this.element);
 			this.on = true;
+			this.GenerateFade(this.element);
 		}
 		else if (currHeightPercent > TITLE_FADE && this.on == true)
 		{
-			this.GenerateFade(this.element);
 			this.on = false;
+			this.GenerateFade(this.element);
 		}
 	}
 
