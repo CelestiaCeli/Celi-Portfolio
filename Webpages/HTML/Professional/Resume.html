@@ -49,6 +49,7 @@ TODO: some art changes
 		<!-- Classes/Objects -->
 		<script src="/Webpages/JavaScript/Objects/Header.js" type="module"></script>
 		<script src="/Webpages/JavaScript/Objects/Footer.js" type="module"></script>
+		<script src="/Webpages/JavaScript/Objects/FadingTitle.js" type="module"></script>
 
 		<!-- Sticky Elements -->
 		<!-- <script src="/Webpages/JavaScript/Objects/BackToCard.js" type="module"> </script> -->
@@ -221,64 +222,10 @@ TODO: some art changes
 
             </section>
 
-			<section id="contact">
-				<div class="seperator"> 
-				</div>
-
-				<div id="contactSection">
-					<h2>
-						Contact
-					</h2>
-					<p id="contactSubtext">
-						There are various ways to contact me! 
-						You may contact me by filling details below, 
-						in addition you can reach me on discord by 
-						<a href="https://discord.gg/796ArU5p33"> 
-							clicking here! 
-						</a>
-					</p>
-					<form id="contactForm" action="mailto:felithiamity.maker130@passinbox.com" method="post">
-						<div>
-							<p>
-								Email:
-							</p>
-							<input type="text" class="contextField" name="Email" maxlength="50" size="50" required>
-						</div>
-						<div>
-							<p>
-								Name:
-							</p>
-							<input type="text" class="contextField" name="Name" maxlength="40" size="40" required>
-						</div>
-						<div>
-							<p>
-								Inquiry:
-							</p>
-							<textarea class="contextField" name="ContextField" required></textarea>
-						</div>
-						<input type="submit" value="Submit" id="submit" class="contextField" >
-					</form>
-				</div>
-
-			</section>
 		</main>
 
 	<footer id="footer">
 	</footer>
-
-
-			<script type='module'>
-			import ObjectFader from '../../JavaScript/Objects/ObjectFader.js'
-			try
-			{
-				let titleFade = ObjectFader.FadeOnly('title', 0, 100);
-				addEventListener('scroll', (event) => { titleFade.OnScroll() });
-			}
-			catch
-			{
-				console.log("Scrolling functionality is missing.");
-			}
-		</script>
     </body>
 
 	

@@ -49,6 +49,7 @@ TODO: some art changes
 		<!-- Classes/Objects -->
 		<script src="/Webpages/JavaScript/Objects/CasualHeader.js" type="module"></script>
 		<script src="/Webpages/JavaScript/Objects/Footer.js" type="module"></script>
+		<script src="/Webpages/JavaScript/Objects/FadingTitle.js" type="module"></script>
 
 		<!-- Sticky Elements -->
 		<script src="/Webpages/JavaScript/Objects/BackToCard.js" type="module"> </script>
@@ -66,18 +67,6 @@ TODO: some art changes
 
 	<!-- Startup functions that generate predetermined objects -->
 	<body>
-		<script type='module'>
-			import ObjectFader from '../../JavaScript/Objects/ObjectFader.js'
-			try
-			{
-				let titleFade = ObjectFader.FadeOnly(document.getElementById('title'), 0, 100);
-				addEventListener('scroll', (event) => { titleFade.OnScroll() });
-			}
-			catch
-			{
-				console.log("Scrolling functionality is missing.");
-			}
-		</script>
 		<div id="warningPopUp">
 		</div>
 

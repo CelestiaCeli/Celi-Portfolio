@@ -56,21 +56,26 @@ export default class Fader
 
 		const fadeInAnim = [lowOpacity, highOpacity];
 		const fadeOutAnim = [highOpacity, lowOpacity];
+		var element = null;
 
-		if (document.getElementById(_element) != null)
+		if (_element == null)
 		{
-			const element = document.getElementById(_element);
-			const fadeSpeed = { duration: this.time, iterations: 1, complete: this.FadeFinished(element, this.fadeOut), }
-			if (this.fadeOut == true)
-			{
-				element.animate(fadeOutAnim, fadeSpeed);
-			}
-			else
-			{
-				element.animate(fadeInAnim, fadeSpeed);
-			}
-
-			return;
+			element = document.getElementById(_element);
 		}
+		else
+		{
+			element = _element;
+		}
+		const fadeSpeed = { duration: this.time, iterations: 1, complete: this.FadeFinished(element, this.fadeOut), }
+		if (this.fadeOut == true)
+		{
+			element.animate(fadeOutAnim, fadeSpeed);
+		}
+		else
+		{
+			element.animate(fadeInAnim, fadeSpeed);
+		}
+
+		return;
 	}
 }

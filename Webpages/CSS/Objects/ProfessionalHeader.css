@@ -13,7 +13,7 @@
 	#headerOptions
 	{
 		display: grid;
-		grid-template-columns: auto auto auto;
+		grid-template-columns: auto auto auto auto auto;
 		place-items: center;
 		gap: 0%;
 		z-index: 3;
@@ -35,7 +35,7 @@
 	#headerBackground
 	{
 		position:absolute;
-		top: -12vh;
+		top: -14vh;
 		margin-left: 0;
 		margin-right: 0;
 		left: 0;

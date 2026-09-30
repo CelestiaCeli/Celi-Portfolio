@@ -25,9 +25,19 @@ class Header extends Generator
 							"Portfolio" +
 							"</h3>" +
 							"</a>" +
+							"<a href='Contact.html'>" +
+							"<h3>" +
+							"Contact" +
+							"</h3>" +
+							"</a>" +
 							"<a href='Promo.html'>" +
 							"<h3>" +
 							"Promo Video" +
+							"</h3>" +
+							"</a>" +
+							"<a href='../Card.html'>" +
+							"<h3>" +
+							"Back to Card" +
 							"</h3>" +
 							"</a>" +
 						"</div>" +

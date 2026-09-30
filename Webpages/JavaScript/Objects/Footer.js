@@ -10,16 +10,9 @@ class Footer extends Generator
 							"<div id='socialMedia'>" +
 							"</div>" +
 							"<div class='contextMenu'>" +
-							"<h2> Professional </h2>" +
 							"<a href='/Webpages/HTML/Professional/Resume.html'> <p> Resume </p> </a>" +
 							"<a href='/Webpages/HTML/Professional/Extended.html'> <p> Portfolio </p> </a>" +
 							"<a href='/Webpages/HTML/Professional/Promo.html'> <p> Promo Video </p> </a>" +
-							"</div>" +
-							"<div class='contextMenu'>" +
-							"<h2> Professional </h2>" +
-							"<a href='/Webpages/HTML/UnProfessional/AboutMe.html'> <p> About Me </p> </a>" +
-							"<a href='/Webpages/HTML/WorkInProgress.html'> <p> N/A </p> </a>" +
-							"<a href='/Webpages/HTML/WorkInProgress.html'> <p> N/A </p> </a>" +
 							"</div>" +
 							"<div id='contextOptions'>" +
 							"<a href='#top' class='LeftSide'> <p> Back to top </p> </a>" +
