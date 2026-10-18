@@ -19,6 +19,21 @@
 		z-index: 3;
 		width: var(--screen-width);
 	}
+	header
+	{
+		z-index: 1;
+	}
+header
+{
+	display: contents;
+}
+
+#header
+{
+	display: contents;
+}
+
+
 
 	#title, #headerOptions
 	{
@@ -29,28 +44,34 @@
 	#headerOptions h3 
 	{
 		z-index: 2;
-		font-size: 2.2vw;
+		font-size: 0.85cm;
+	}
+
+
+	#recentShowcase
+	{
+		background-image:  url("/Assets/Backgrounds/Gradiants.svg"), url("/Assets/Headers/RecentProjectForeground.svg"), url("/Assets/Backgrounds/PartyGeistsBG.avif");
+		background-repeat:no-repeat;
+		background-size: cover, cover, cover;
 	}
 
 	#headerBackground
 	{
 		position:absolute;
-		top: -14vh;
+		top: -39ch;
 		margin-left: 0;
 		margin-right: 0;
 		left: 0;
 		right: 0;
-		height: 38%;
+		height: 610px;
 		z-index: 1;
 		background-repeat:repeat-y;
-		background-size: 10%;
 		opacity: 0.33;
 		width: var(--screen-width);
 	}
 
 		#title
 		{
-			height: 7vh;
 			width: 98.5vw;
 			padding-bottom: 2%;
 			pointer-events:visible;
@@ -58,7 +79,7 @@
 
 		#title h1
 		{
-			font-size: 3.5vw;
+			font-size: 1.5cm;
 			font-family: itsadzoke;
 			margin: 0;
 		}

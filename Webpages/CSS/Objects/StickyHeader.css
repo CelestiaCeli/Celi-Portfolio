@@ -1,13 +1,3 @@
-header
-{
-	display: contents;
-}
-
-#header
-{
-	display: contents;
-}
-
 #title
 {
 	position: sticky;
@@ -22,6 +12,5 @@ header
 
 #headerBackground
 {
-	height: 25vh;
+	height: 500px;
 }
-

@@ -1,16 +1,12 @@
 		main
 		{
-			margin-top: 5vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		video 
 		{
-			justify-content: center;
-			align-self: center;
-			align-items: center;
-
-			margin-left: 10vw;
-			margin-bottom: 5vw;
-
+			margin: 5vw;
 			width: 80%;
 		}

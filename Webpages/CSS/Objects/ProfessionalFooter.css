@@ -60,6 +60,11 @@
 			justify-self:center; 
 		}
 
+		#contextMenu
+		{
+			justify-self: center;
+		}
+
 		#copyright, #contextOptions
 		{
 			margin-bottom: 1.0vw;

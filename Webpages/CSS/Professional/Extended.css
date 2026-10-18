@@ -1,5 +1,9 @@
+/* Global */
+:root
+{
+	--screen-width: 100%;
 
-
+}
 
 .GameImage
 {
@@ -31,6 +35,13 @@
 	}
 }
 
+	#recentShowcase
+	{
+		background-image: url("/Assets/Headers/RecentProjectForeground.svg");
+		background-repeat:no-repeat;
+		background-size: cover;
+	}
+
 .project div
 {
 	width: 400px;
@@ -51,4 +62,46 @@
 #slideshow
 {
 	margin: 4vw;
+}
+
+#recentProjectContents
+{
+	display: grid;
+	grid-template-columns: 33%;
+	gap: 0.0cm;
+	justify-items: center;
+	margin-top: 0.5cm;
+	margin-right: 1cm;
+	justify-content: right;
+}
+
+#recentProjectForeground
+{
+	justify-self: auto;
+	top: 180px;
+	position: absolute;
+	width: var(--screen-width);
+	max-height: 100%;
+	object-fit: cover;
+}
+
+
+#recentProjectButtons
+{
+	display:flex;
+	overflow:hidden;
+	align-items: center;
+	gap: 4.5cm;
+	justify-items: center;
+	justify-content: right;
+	border-radius: 7px;
+	margin-top: 0.5cm;
+	margin-right: 1cm;
+	padding: 2.5%;
+}
+
+#recentProjectButtons > *
+{
+
+	transform: scale(1.6);
 }
