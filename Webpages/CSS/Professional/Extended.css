@@ -64,6 +64,13 @@
 	margin: 4vw;
 }
 
+	#recentShowcase
+	{
+		background-image:  url("/Assets/Backgrounds/Gradiants.svg"), url("/Assets/Headers/RecentProjectForeground.svg"), url("/Assets/Backgrounds/PartyGeistsBG.avif");
+		background-repeat:no-repeat;
+		background-size: cover, cover, cover;
+	}
+
 #recentProjectContents
 {
 	display: grid;

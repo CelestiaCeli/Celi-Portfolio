@@ -47,14 +47,6 @@ header
 		font-size: 0.85cm;
 	}
 
-
-	#recentShowcase
-	{
-		background-image:  url("/Assets/Backgrounds/Gradiants.svg"), url("/Assets/Headers/RecentProjectForeground.svg"), url("/Assets/Backgrounds/PartyGeistsBG.avif");
-		background-repeat:no-repeat;
-		background-size: cover, cover, cover;
-	}
-
 	#headerBackground
 	{
 		position:absolute;
