@@ -1,5 +1,16 @@
 img
 {
-	margin-left: 28%;
+	justify-content: center;
+	align-self: center;
+	align-content: center;
+	align-items: center;
 	width: 20cm;
+	max-width: 90vw;
 }
+
+#unexpectedCat
+{
+	display: grid;
+	justify-content: center;
+}
+
