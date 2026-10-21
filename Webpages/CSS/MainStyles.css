@@ -22,7 +22,6 @@
 			font-family: Cyen;
 			src: url('Assets/Fonts/Cyen.ttf');
 		}
-
 	/* Effects */
 
 	#invert
@@ -206,3 +205,10 @@
 		}
 
 		/* Form */
+
+@media screen and (max-width: 800px) {
+	p
+	{
+		font-size: 100%;
+	}
+}

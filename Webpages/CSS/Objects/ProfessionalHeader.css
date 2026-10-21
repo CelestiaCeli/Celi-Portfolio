@@ -6,6 +6,24 @@
 
 }
 
+@media screen and (max-width: 800px) {
+	#headerOptions
+	{
+		grid-template-columns: auto;
+		gap: 0px;
+	}
+	#headerOptions a h3
+	{
+		margin: 0.25cm;
+	}
+}
+@media screen and (min-width: 800px) {
+	#headerOptions
+	{
+		grid-template-columns: auto auto auto auto auto;
+	}
+}
+
 /* Header */
 
 	/* Title */
@@ -13,7 +31,6 @@
 	#headerOptions
 	{
 		display: grid;
-		grid-template-columns: auto auto auto auto auto;
 		place-items: center;
 		gap: 0%;
 		z-index: 3;

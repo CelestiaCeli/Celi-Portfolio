@@ -7,7 +7,7 @@ class Footer extends Generator
 		super();
 		this.ID = "footer";
 		this.content = "<div id='credits'>" +
-							"<div id='socialMedia'>" +
+							"<div class='socialMedia'>" +
 							"</div>" +
 							"<div class='contextMenu'>" +
 							"<a href='/Webpages/HTML/Professional/Resume.html'> <p> Resume </p> </a>" +

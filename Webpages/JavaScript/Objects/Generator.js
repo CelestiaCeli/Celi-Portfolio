@@ -8,15 +8,24 @@ export default class Generator
 
 	Generate()
 	{
-		const selectedElement = document.getElementById(this.ID);
-		const newElement = document.createElement("div");
-
-		newElement.innerHTML = this.content;
-		const node = new DOMParser().parseFromString(this.content, "text/html").body;
-
-		selectedElement.appendChild(node.childNodes[0]);
-
+		const selectedElement = document.getElementsByClassName(this.ID);
+		console.log(selectedElement);
+		for (var i = 0; i < selectedElement.length; i++)
+		{
+			this.GenerateOnce(selectedElement[i]);
+		}
 		this.FinishedGenerator();
+	}
+
+	GenerateOnce(specificElement)
+	{
+		console.log("Generating");
+			const newElement = document.createElement("div");
+
+			newElement.innerHTML = this.content;
+			const node = new DOMParser().parseFromString(this.content, "text/html").body;
+
+			specificElement.appendChild(node.childNodes[0]);
 	}
 
 	RetrieveElement()
