@@ -8,9 +8,86 @@ img
 	max-width: 90vw;
 }
 
+#name, #email, #submit
+{
+	display: grid;
+	align-items: center;
+	gap: 0%;
+}
+
+#name, #email
+{
+	justify-self: center;
+	grid-template-columns: 20% 90%;
+
+}
+
+#submit
+{
+	margin: 0.5cm;
+}
+
+#submit > *
+{
+	width: 3cm;
+	justify-self: center;
+	transform: scale(1.6);
+}
+
+#inquiry 
+{
+	display: grid;
+	grid-template-columns: auto;
+}
+
 #unexpectedCat
 {
 	display: grid;
 	justify-content: center;
 }
 
+#email input, #name input
+{
+	width: 6cm;
+}
+
+		#inquiry textarea
+		{
+			width: 15cm;
+			height: 2cm;
+			resize:none;
+		}
+
+		#contactForm 
+		{
+			display: flex;
+			grid-template-columns: auto;
+			justify-content: center;
+			flex-direction: column;
+
+		}
+
+		#contactContents
+		{
+			display: grid;
+			grid-template-columns: auto auto;
+			margin-right: 3cm;
+			margin-left: 3cm;
+			margin-top: 1cm;
+			margin-bottom: 1cm;
+		}
+
+
+		#contact 
+		{
+			background-image: url('../../Assets/Headers/output.webp');
+			background-size: cover;
+			margin: 0;
+			padding-bottom: 2.5vw;
+		}
+
+		.contextField
+		{
+			padding: 0.5vw;
+			margin: 0.5vw;
+		}

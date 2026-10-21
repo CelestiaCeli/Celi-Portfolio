@@ -71,15 +71,36 @@
 		background-size: cover, cover, cover;
 	}
 
+#recentProjectContents #keyArt
+{
+	max-width: 6cm;
+	margin-top: 0.5cm;
+	justify-self: right;
+	animation: fadeinRight 1.5s;
+}
+
 #recentProjectContents
 {
 	display: grid;
-	grid-template-columns: 33%;
+	grid-template-columns: 65% 35%;
 	gap: 0.0cm;
 	justify-items: center;
 	margin-top: 0.5cm;
 	margin-right: 1cm;
 	justify-content: right;
+}
+
+#projectBiography
+{
+	display: grid;
+	grid-template-rows: 50% 50%;
+	align-items: center;
+	gap: 0px;
+}
+
+#projectBiography > *
+{
+	margin: 0;
 }
 
 #recentProjectForeground
@@ -103,7 +124,7 @@
 	justify-content: right;
 	border-radius: 7px;
 	margin-top: 0.5cm;
-	margin-right: 1cm;
+	margin-right: 3.5cm;
 	padding: 2.5%;
 }
 
@@ -111,4 +132,5 @@
 {
 
 	transform: scale(1.6);
+	z-index: -0;
 }

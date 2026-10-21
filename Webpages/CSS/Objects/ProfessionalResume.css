@@ -73,7 +73,6 @@
 
 		#NyanileMain
 		{
-			margin-right: 7vw;
 			position:sticky;
 			top: 10vw;
 			z-index: 0;
@@ -83,6 +82,7 @@
 		#nyanileStopper
 		{
 			max-height: 80%;
+			padding-left: 5vw;
 		}
 
 		#recentProject img
