@@ -27,6 +27,20 @@ img
 	margin: 0.5cm;
 }
 
+#altContactMethods
+{
+	margin-left: 0cm;
+	margin-right: 0cm;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.contactMethod
+{
+	display: grid;
+	justify-content: center;
+}
+
 #submit > *
 {
 	width: 3cm;
