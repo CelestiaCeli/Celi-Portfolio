@@ -128,9 +128,31 @@
 	padding: 2.5%;
 }
 
+
+
 #recentProjectButtons > *
 {
 
-	transform: scale(1.6);
 	z-index: -0;
+}
+
+@media screen and (max-width: 800px) {
+#recentProjectButtons > *
+{
+
+	transform: scale(1.25);
+}
+#recentProjectButtons
+{
+	gap: 1.5cm;
+	margin-right: 0cm;
+	justify-content: center;
+}
+}
+
+@media screen and (min-width: 800px) {
+#recentProjectButtons > *
+{
+	transform: scale(1.6);
+}
 }

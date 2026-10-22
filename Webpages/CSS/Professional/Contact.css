@@ -5,7 +5,6 @@ img
 	align-content: center;
 	align-items: center;
 	width: 20cm;
-	max-width: 90vw;
 }
 
 #name, #email, #submit
@@ -105,3 +104,32 @@ img
 			padding: 0.5vw;
 			margin: 0.5vw;
 		}
+
+@media screen and (max-width: 800px) {
+
+	#contactContents
+	{
+		grid-template-columns: auto;
+		justify-content: center;
+	}
+
+	#contactContents #socialMedia > * img
+	{
+		height: 200%;
+	}
+	#altContactMethods
+	{
+		grid-template-columns: auto;
+		gap: 3cm;
+	}
+
+		#inquiry textarea
+		{
+			width: 75vw;
+			height: 2cm;
+			resize:none;
+		}
+}
+
+
+
