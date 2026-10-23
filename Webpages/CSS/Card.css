@@ -17,18 +17,27 @@ li::marker
 
 /* Header */
 
-	Header h1
+	Header
 	{
-
-		margin-top: 2vw;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		justify-content: center;
 	}
+
+	Header > *
+	{
+		align-self: center;
+	}
+
+main > *
+{
+	position:absolute;
+}
 
 /* Card Specific */
 
 	#card 
 	{
-		display: grid;
-		grid-template-columns: auto auto;
 
 		padding-top: 3vw;
 		padding-bottom: 3vw;
@@ -120,3 +129,8 @@ li::marker
 		}
 /* Footer */
 
+
+test:target #card
+{
+	display:none;
+}
