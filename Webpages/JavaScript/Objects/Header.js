@@ -35,7 +35,7 @@ class Header extends Generator
 							"Promo Video" +
 							"</h3>" +
 							"</a>" +
-							"<a href='../Card.html'>" +
+							"<a href='../WorkInProgress.html'>" +
 							"<h3>" +
 							"Back to Card" +
 							"</h3>" +
