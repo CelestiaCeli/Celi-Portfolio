@@ -16,12 +16,32 @@ body
 		display: grid;
 		grid-template-columns: auto auto auto;
 		justify-content: center;
+		gap: 1cm;
+		margin: 0.2cm;
 	}
 
 	Header > *
 	{
 		align-self: center;
 	}
+
+	Header h3
+	{
+		color: black;
+	}
+
+#homeIcons
+{
+	justify-items: center;
+	display: grid;
+}
+
+.socialMedia
+{
+	display: grid;
+	justify-self: center;
+}
+
 main
 {
 	background-image: none;
@@ -30,8 +50,8 @@ main
 #iconLogo
 {
 	width: 6.5cm;
-
 }
+
 
 main > *
 {
@@ -41,8 +61,8 @@ main > *
 	border-radius: 1cm;
 	left: 0;
 	right: 0;
-	margin-left: 4cm;
-	margin-right: 4cm;
+	margin-left: 4%;
+	margin-right: 4%;
 }
 
 .headerInfo
@@ -50,9 +70,79 @@ main > *
 	font-size: 0;
 }
 
-.headerContents
+.websiteContents
 {
 	display: grid;
-	font-size: 0.5cm;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto auto auto;
+	justify-items: center;
+	font-size: 0.7cm;
+	margin: 1cm;
+}
+
+.homeContents
+{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.headerTitle
+{
+	margin-bottom: 0px;
+}
+
+.headerSubtext
+{
+	margin-top: 0px;
+}
+
+.socialMedia a img
+{
+	width: 1%;
+
+}
+
+#corpoDisclaimer
+{
+	position:absolute;
+	top: 0;
+	width: 33%;
+	font-size: 0.4cm;
+	color:rgb(200, 200, 200, 80%);
+}
+
+#informalHeader
+{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+#formalList ul
+{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+li
+{
+	text-align: center;
+	font-size: 0.6cm;
+}
+
+li
+{
+	color: white;
+}
+
+#sidebyside
+{
+	display: grid;
+	grid-template-columns: 65% 25%;
+	margin: 0.5cm;
+	align-items: center;
+	gap: 1cm;
+}
+
+#sidebyside #iconLogo
+{
+	width: 100%;
 }
