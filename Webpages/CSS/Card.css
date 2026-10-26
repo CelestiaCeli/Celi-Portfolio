@@ -103,9 +103,6 @@ main > *
 
 #corpoDisclaimer
 {
-	position:absolute;
-	top: 0;
-	width: 33%;
 	font-size: 0.4cm;
 	color:rgb(200, 200, 200, 80%);
 }
@@ -114,9 +111,12 @@ main > *
 {
 	display: grid;
 	grid-template-columns: auto auto;
+	gap: 50%;
+  	margin-left: 1cm;
+  	margin-right: 1cm;
 }
 
-#formalList ul
+.cardList ul
 {
 	display: grid;
 	grid-template-columns: auto auto;
@@ -142,7 +142,26 @@ li
 	gap: 1cm;
 }
 
+#informalList
+{
+	width: 30%;
+}
+
 #sidebyside #iconLogo
 {
 	width: 100%;
+}
+
+#topTextSide
+{
+	max-width: 830px;
+	height: 50px;
+	margin:auto;
+	margin-bottom: 0;
+	max-height: 100px
+}
+
+#textSide
+{
+	display: grid;
 }
