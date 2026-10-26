@@ -30,12 +30,13 @@ class Header extends Generator
 							"Contact" +
 							"</h3>" +
 							"</a>" +
-							"<a href='Promo.html'>" +
+			/* "<a href='Promo.html'>" +
 							"<h3>" +
 							"Promo Video" +
 							"</h3>" +
 							"</a>" +
-							"<a href='../WorkInProgress.html'>" +
+							*/
+							"<a href='../Card.html'>" +
 							"<h3>" +
 							"Back to Card" +
 							"</h3>" +

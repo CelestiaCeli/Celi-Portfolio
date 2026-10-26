@@ -73,7 +73,7 @@ main > *
 .websiteContents
 {
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: auto auto auto;
 	justify-items: center;
 	font-size: 0.7cm;
 	margin: 1cm;
