@@ -1,0 +1,11 @@
+#socialMedia > a > img:hover
+{
+	height: 4.5vw;
+	width: 4.5vw;
+
+}
+
+#socialMedia
+{
+	margin: 1cm;
+}

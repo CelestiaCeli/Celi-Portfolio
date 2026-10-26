@@ -69,11 +69,7 @@ function WordPasser(ChosenWord)
                     }
                 }
             }
-        console.log(YellowText);
     }
-
-    console.log(Guesses);
-
         if (ChosenWord == GeneratedWord)
             {
 
