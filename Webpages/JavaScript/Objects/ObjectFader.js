@@ -10,7 +10,11 @@ export default class ObjectFader extends Fader
 	{
 		super(_lowFade, _highFade, _time);
 		this.element = _element;
+		this.action = _action;
+		this.condition = _condition;
 		this.on = false;
+
+		addEventListener(action, (event) => { header.OnAction() });
 	}
 
 	static TimeOnly(_element, _time)
@@ -21,6 +25,11 @@ export default class ObjectFader extends Fader
 	static FadeOnly(_element, _lowFade, _highFade)
 	{
 		return new ObjectFader(_element, _lowFade, _highFade, DEFAULT_TIME);
+	}
+
+	OnAction()
+	{
+		
 	}
 
 	OnScroll()
