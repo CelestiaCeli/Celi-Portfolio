@@ -36,12 +36,10 @@ export default class Fader
 		if (faded)
 		{
 			element.style.opacity = this.highFade;
-			element.style.pointerEvents = 'auto';
 		}
 		else
 		{
 			element.style.opacity = this.lowFade;
-			element.style.pointerEvents = 'none';
 		}
 		this.fadeOut = !this.fadeOut;
 	}

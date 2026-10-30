@@ -52,6 +52,16 @@ main
 	width: 6.5cm;
 }
 
+.headerText
+{
+	pointer-events:none;
+}
+
+#informalContents
+{
+	visibility: hidden;
+}
+
 
 main > *
 {

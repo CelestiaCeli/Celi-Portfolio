@@ -19,9 +19,10 @@
 
 		<!-- Scripts -->
 		<script src="../JavaScript/MainScript.js"></script>
-		<script src="../JavaScript/Card.js"></script>
+		<script src="../JavaScript/Card.js" type="module"></script>
 
 		<script src="../JavaScript/Objects/SocialMedia.js" type="module"></script>
+		</script>
 
 
         <title>
@@ -33,30 +34,28 @@
 
 
 
-			<header>
-					<button onclick="ChangeView('home')" class="headerButton" id="home">
-						<h3>
+			<header>							
+					<button class="headerButton" id="home">
+						<h3 class="headerText">
 							Home
 						</h3>
 					</button>
 
-					<button onclick="ChangeView('formal')" class="headerButton" id="formal">
-						<h3>
+					<button class="headerButton" id="formal">
+						<h3 class="headerText">
 							Formal
 						</h3>
 					</button>
-<!--
-					<button onclick="ChangeView('informal')" class="headerButton" id="informal">
-						<h3>
+					<button class="headerButton" id="informal">
+						<h3 class="headerText">
 							Informal
 						</h3>
 					</button>
--->
 
 			</header>
 
 			<main>
-				<section id="homeSection">
+				<section id="homeContents">
 
 					<div>
 						<h1 class="headerTitle">
@@ -78,9 +77,9 @@
 							You can navigate between both professional and unprofessional websites by pressing the buttons below! 
 						</p>
 					</div>
-						<div class="homeContents">
+						<div id="homeDirections">
 
-								<a onclick="ChangeView('formal')">
+								<a>
 									<h4>
 										Go to Formal
 									</h4>
@@ -111,7 +110,7 @@
 					</div>
 				</section>
 
-				<section id="formalSection">
+				<section id="formalContents">
 						<h1 class="headerTitle">
 	
 							Felithiamity.
@@ -196,7 +195,7 @@
 					</div>
 				</section>
 
-				<section id="informalSection">
+				<section id="informalContents">
 					<div class="header" id="informalHeader">
 						<div>
 							<h1 class="headerTitle">

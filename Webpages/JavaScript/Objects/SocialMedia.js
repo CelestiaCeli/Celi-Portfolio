@@ -4,6 +4,7 @@ class SocialMedia extends Generator
 {
 	constructor()
 	{
+		console.log("Fuck");
 		super();
 		this.ID = "socialMedia";
 		this.content = "<div id='socialMedia'>" +
